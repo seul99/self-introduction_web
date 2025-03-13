@@ -1,0 +1,65 @@
+html{
+   scroll-behavior: smooth;
+}
+
+body {
+   overflow: hidden;
+   font-family: 'Roboto Slab', serif;
+   scroll-behavior: smooth;
+   /* 추가 */
+   overflow-x: hidden ;
+   overflow-y: auto ;
+}
+
+
+/* Scroll down */
+
+#container{
+   width:100%;
+   height:100vh; 
+   overflow: scroll;
+   scroll-behavior: smooth;
+   scroll-snap-type: y mandatory;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+
+   /* 추가 */
+   min-height: 100vh;
+   overflow-y: auto;
+}
+
+/* 스크롤바 제거 */
+#container::-webkit-scrollbar {
+   display: none;
+ }
+
+.list{
+   width:100%; 
+   height:100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   scroll-snap-align: center;
+   scroll-snap-stop: start;
+   user-select: none;
+   background-size: cover;
+   background-attachment: fixed; 
+   background-position: center; 
+}
+
+
+.list:nth-child(2){
+   background-color: #F4C2C2;
+}
+
+.list:nth-child(3){
+   background-color: #4e5a56;
+}
+
+.list:nth-child(4){
+   background-color: #F3D9CA;
+}
+
+.list:nth-child(5){
+   background-color: #b39db3;
+}

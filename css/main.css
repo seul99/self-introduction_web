@@ -1,0 +1,383 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+html {
+   scroll-behavior: smooth;
+}
+body {
+   overflow: hidden;
+   font-family: 'Roboto Slab', sans-serif;
+}
+
+h3 {
+   font-family: 'Pretendard-Thin';
+   color: #ffffff;
+   text-align: center;
+   font-style: italic;
+   font-weight: lighter;
+   margin-top: 50px;
+   font-size: 20px;
+}
+
+p {
+   font-family: 'Pretendard-Thin';
+   color: #ffffff;
+   text-align: center;
+   font-style: italic;
+   font-weight: lighter;
+   margin-top: 50px;
+   font-size: 20px;
+}
+
+.one, .two , .three, .four{
+   padding: 100px 5%;
+   text-align: center;
+   max-width: 1200px;
+   margin: 100px auto;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(10px);
+}
+/* .two{
+   padding: 100px 5%;
+   text-align: center;
+   max-width: 1200px;
+   margin: 100px auto;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(10px);
+} */
+
+/* 상단바 */
+
+.menu * {
+   display: inline;
+}
+
+.menu li {
+   margin: 35px;
+}
+
+.menu li a {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   transition: opacity 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+   opacity: 0.6;
+}
+.menu ul {
+   padding-left: 0px;
+}
+
+.menu {
+   font-size: 20px;
+   font-style: italic;
+   align-items: center;
+   text-align: center;
+   padding-top: 80px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 80px;
+   z-index: 1000;
+} 
+
+/* 작은 화면에서 크기 조정 */
+@media (max-width: 768px) {
+   .menu{
+      font-size: 17px;
+   }
+   .menu li {
+      margin: 20px;
+   }
+}
+
+/* Home */
+
+.one {
+   background-size: cover;
+   text-align: center;
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.profile {
+   border-radius: 30%;
+   display: inline-block;
+   padding: 0.5rem;
+   margin-top: 80px;
+   border: 1px solid gray;
+   background-color: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.profile img {
+   border-radius: 30%;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+   .profile{
+      margin-bottom: 0;
+   }
+   .profile img {
+      width: 70vw;
+      height: auto;
+      max-width: 400px;
+   }
+   h3 {
+      font-size: 16px;
+   }
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+   .profile {
+      font-size: 16px;
+   }
+   .profile img {
+      width: 60vw;
+      height: auto;
+      max-width: 380px;
+      max-height: 60vh;
+   }
+   h3{
+      margin-top: 20px;
+   }
+}
+
+/* About */
+
+.two{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   text-align: center;
+
+   /* 추가 */
+   min-height: 100vh;
+   padding: 20px;
+}
+
+.me {
+   display: block;
+   width: 100%;
+   max-width: 450px;
+   height: auto;
+   margin-top: 100px;
+}
+.intext {
+   float: none;
+   margin-top: 20px;
+   padding: 20px;
+   margin-left: 20px;
+   max-width: 500px;
+   text-align: left;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+   .me{
+      width: 70vw;
+      height: auto;
+      max-width: 300px;
+      max-height: 50vh;
+   }
+   .intext {
+      float: none;
+      font-size: 15px;
+   }
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+   .me {
+      width: 70vw;
+      height: auto;
+      max-width: 300px;
+      max-height: 70vh;
+
+   }
+   .intext {
+      font-size: 18px;
+      margin-top: 90px;
+   }
+}
+
+/* Favorite */
+
+h1 {
+   text-align: center;
+}
+
+.favorites {
+   /* display:flex; */
+   display:inline-flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 60px;
+   text-decoration: none;
+}
+
+.content{
+   text-align: center;
+   font-family: 'Pretendard-Thin';
+   /* display: flex; */
+   /* display: block; */
+   display: inline-block;
+   text-align: center;
+   /* font-size: 200px; */
+   /* line-height: 1.5; */
+   font-style: italic;
+}
+.content_img {
+   width: 250px;
+   height: 250px;
+   display: block;
+   /* float: none; */
+   margin: 5vh 2.5vh;
+   margin-bottom: 40px;
+   border-radius: 10px;
+   transition: transform 0.3s;
+   object-fit: cover;
+}
+.content_img:hover {
+   transform: scale(1.05);
+}
+.content_text{
+   font-weight: bold;
+}
+.content_text a {
+   color: inherit; /* 부모 요소의 색상 유지 */
+   text-decoration: none; /* 밑줄 제거 */
+   transition: opacity 0.3s ease-in-out;
+ }
+ 
+ .content_text a:hover{
+   opacity: 0.6;
+ }
+ 
+
+/* 모바일 */
+@media (max-width: 768px) {
+   .content_text{
+      font-size: 13px;
+      margin-top: 20px;
+   }
+   .content_img {
+      width: 30vw;
+      height: auto;
+      max-width: 250px;
+      max-height: 250px;
+      margin: 2vh 5vh;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+   }
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+   h1{
+      margin: 0 auto;
+      margin-top: 80px;
+   }
+   .content{
+      margin-top: 0;
+   }
+   .content_text{
+      font-size: 18px;
+   }
+   .content_img {
+      width: 30vw;
+      height: auto;
+      max-width: 250px;
+      max-height: 250px;
+   }
+}
+
+/* Contact */
+
+.four {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+}
+
+.contact_img {
+   width: 1000px;
+   max-width: 100%;
+   height: 500px;
+   padding-bottom: 40px;
+   margin-top: 30px;
+}
+
+table {
+   display: block;
+   margin: 0 auto;
+   padding-top: 50px;
+}
+.ct {
+   margin-top: 80px;
+   font-family: 'Roboto Slab', serif;
+   text-decoration: none;
+   color: white;
+   font-size: 30px;
+   font-style: italic;
+   margin: 35px;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+   .contact_img{
+      width: 700px;
+      height: 300px;
+      margin-top: 20px;
+   }
+   .ct {
+      margin-top: 50px;
+      font-size: 20px;
+   }
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+   .contact_img{
+      width: 800px;
+      height: 400px;
+      margin-top: 20px;
+   }
+   .ct {
+      margin-top: 70px;
+      font-size: 30px;
+   }
+}
+
+
+/* 페이드인 효과 */
+.list.fade-in {
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 1s ease-out;
+   will-change: opacity;
+}
+
+.list.fade-in.show {
+   opacity: 1;
+   /* transform: translateY(0); */
+}
+
+.list.fade-in:not(.show) {
+   opacity: 0;
+   transform: translateY(30px);
+}
