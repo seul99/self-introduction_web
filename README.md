@@ -2,7 +2,8 @@
 멋사 1주차 프로젝트로 제작한 자기소개 웹페이지 입니다. 🌟 <br>
 
 ![My GIF](assets/WebSite_git_Upload.gif)
-<br>
+
+<br><br>
 
 ## 🗒️ What pages are there?
 - Home: 메인 페이지 <br>
