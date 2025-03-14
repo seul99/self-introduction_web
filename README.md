@@ -19,8 +19,6 @@
 <br>
 
 ## ⚙️ 주요 기능
-**Favorite** 화면에서 **Food, Travel** 부분 **이미지, 글씨** 클릭시 페이지 이동 <br>
-
 **CSS** <br>
 **scroll** 기능 추가
 ```
@@ -96,6 +94,7 @@ prevBtn.addEventListener('click', function(){
 - [x] 상당 menu 글씨에 마우스 호버할 경우 반투명으로 변함
 - [x] 각 메뉴 클릭시 해당 섹션으로 이동
 - [x] 이미지에 마우스 호버할 경우 사이즈  커짐 ``` transform: scale(1.05); ```
+- [x] **Favorite** 화면에서 **Food, Travel** 부분 **이미지, 글씨** 클릭시 페이지 이동
 
 <br>
 
