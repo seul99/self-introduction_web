@@ -1,10 +1,10 @@
-# Self Introduction Web Site
+# My Self-Introduction Website
 멋사 1주차 프로젝트로 제작한 자기소개 웹페이지 입니다. 🌟 <br>
 
 ![My GIF](assets/WebSite_git_Upload.gif)
 <br>
 
-## 🗒️ What's page
+## 🗒️ What pages are there?
 - Home: 메인 페이지 <br>
 - About: 간단한 자기소개 <br>
 - Favorite: 취미, 관심사 정리 <br>
@@ -18,7 +18,7 @@
 
 <br>
 
-## ⚙️ 주요 기능
+## ⚙️ Main Features
 **CSS** <br>
 **scroll** 기능 추가
 ```
@@ -90,7 +90,7 @@ prevBtn.addEventListener('click', function(){
 });
 ```
 
-## 🖥️ 그 기능 간단 정리
+## 🖥️ Other Features
 - [x] 상당 menu 글씨에 마우스 호버할 경우 반투명으로 변함
 - [x] 각 메뉴 클릭시 해당 섹션으로 이동
 - [x] 이미지에 마우스 호버할 경우 사이즈  커짐 ``` transform: scale(1.05); ```
@@ -98,6 +98,6 @@ prevBtn.addEventListener('click', function(){
 
 <br>
 
-## 🥲 아쉬운점
+## 😅 Limitations
 - 반응형 웹을 제대로 구현하지 못했다.
 - food 페이지에 이벤트를 구현하느라 디자인에 신경을 많이 쓰지 못했다.
