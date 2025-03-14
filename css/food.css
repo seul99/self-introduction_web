@@ -55,13 +55,13 @@ li{
    transition: left 0.5s ease-out;
 }
 
+img{
+   border-radius: 10px;
+}
+
 .slides li:not(:last-child){
    float: left;
    margin-right: 30px;
-}
-
-img {
-   border-radius: 0.5rem;
 }
 
 .controls{
