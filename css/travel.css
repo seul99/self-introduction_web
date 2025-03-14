@@ -34,7 +34,6 @@ button:hover{
    opacity: 0.6;
 }
 nav.menu {
-   /* background: rgba(44, 62, 80, 0.9); */
    padding: 15px;
    text-align: center;
    position: fixed;

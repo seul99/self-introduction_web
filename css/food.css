@@ -1,0 +1,83 @@
+/* 전체 레이아웃 스타일링 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Roboto Slab', sans-serif;
+   background-color: #fef5e7;
+   color: #ecf0f1;
+   margin: 0;
+   padding: 0;
+}
+
+/* 버튼속성 */
+.btn {
+   margin-top: 40px;
+   margin-left: 5%;
+   text-decoration: none;
+   padding: 2px 10px;
+   background-color: #fff;
+   border: 1px solid #ccc;
+   border-radius: 0.5em;
+   color: #2c3e50;
+   font-size: 20px;
+   font-weight: 400;
+   font-style: italic;
+   transition: opacity 0.3s ease-in-out;
+}
+.btn:hover{
+   opacity: 0.6;
+}
+
+li{
+   list-style: none;
+   border-radius: 10px;
+}
+
+.slide_wrapper{
+   position: relative;
+   width: 960px;
+   margin: 0 auto;
+   height: 300px;
+   overflow: hidden;
+   margin-top: 180px;
+   height: 350px;
+}
+
+.slides{
+   position: absolute;
+   left: 0;
+   top: 0;
+   transition: left 0.5s ease-out;
+}
+
+.slides li:not(:last-child){
+   float: left;
+   margin-right: 30px;
+}
+
+img {
+   border-radius: 0.5rem;
+}
+
+.controls{
+   text-align: center;
+   margin-top: 50px;
+}
+
+.controls span{
+   padding: 5px 10px;
+   margin: 0 30px;
+   font-size: 30px;
+   transition: opacity 0.3s ease-in-out;
+}
+.controls span:hover{
+   opacity: 0.6;
+}
+
+.controls span.prev{right: calc(100% + 50px);}
+.controls span.next{left: calc(100% + 50px);}

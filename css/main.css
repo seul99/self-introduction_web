@@ -39,16 +39,6 @@ p {
    background: rgba(255, 255, 255, 0.1);
    backdrop-filter: blur(10px);
 }
-/* .two{
-   padding: 100px 5%;
-   text-align: center;
-   max-width: 1200px;
-   margin: 100px auto;
-   border-radius: 10px;
-   background: rgba(255, 255, 255, 0.1);
-   backdrop-filter: blur(10px);
-} */
-
 /* 상단바 */
 
 .menu * {
@@ -232,19 +222,14 @@ h1 {
 .content{
    text-align: center;
    font-family: 'Pretendard-Thin';
-   /* display: flex; */
-   /* display: block; */
    display: inline-block;
    text-align: center;
-   /* font-size: 200px; */
-   /* line-height: 1.5; */
    font-style: italic;
 }
 .content_img {
    width: 250px;
    height: 250px;
    display: block;
-   /* float: none; */
    margin: 5vh 2.5vh;
    margin-bottom: 40px;
    border-radius: 10px;
@@ -257,16 +242,17 @@ h1 {
 .content_text{
    font-weight: bold;
 }
+
 .content_text a {
-   color: inherit; /* 부모 요소의 색상 유지 */
-   text-decoration: none; /* 밑줄 제거 */
+   color: inherit;
+   text-decoration: none;
    transition: opacity 0.3s ease-in-out;
  }
  
  .content_text a:hover{
    opacity: 0.6;
  }
- 
+
 
 /* 모바일 */
 @media (max-width: 768px) {
@@ -374,7 +360,6 @@ table {
 
 .list.fade-in.show {
    opacity: 1;
-   /* transform: translateY(0); */
 }
 
 .list.fade-in:not(.show) {
